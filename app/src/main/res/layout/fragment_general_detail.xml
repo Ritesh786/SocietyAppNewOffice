@@ -1,0 +1,329 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/linearOne">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/one1"
+                android:text="1"
+                android:textColor="#ffffff"
+                android:background="#458b00"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:background="#458b00"
+            android:layout_marginTop="19dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/two2"
+                android:textColor="#ffffff"
+                android:background="#458b00"
+                android:text="2"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:background="#c1cdcd"
+            android:layout_marginTop="19dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/three3"
+                android:text="3"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearOne"
+        android:text="Basic Details"
+        android:textStyle="bold"
+        android:background="#1f3324"
+        android:textColor="#FFDF00"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/textmain"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/linearOne"
+        android:padding="10dp"
+        android:id="@+id/name"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:id="@+id/nameed_txt"
+            android:layout_below="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:padding="10dp"
+        android:id="@+id/lastname"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:id="@+id/lastnameed_txt"
+            android:layout_below="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:padding="10dp"
+                android:id="@+id/houseno"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/houseno_txt"
+                    android:layout_below="@+id/relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="House number"
+                  
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:padding="10dp"
+                android:id="@+id/street"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/street_txt"
+                    android:layout_below="@+id/relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Street/colony/Building "
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:padding="10dp"
+                android:id="@+id/landmark"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/landmark_txt"
+                    android:layout_below="@+id/relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Land mark "
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:padding="10dp"
+                android:id="@+id/ward"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/ward_txt"
+                    android:layout_below="@+id/relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ward number(optional)"
+                    android:inputType="number"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:padding="10dp"
+                android:id="@+id/city"
+                android:layout_marginBottom="8dp">
+                <AutoCompleteTextView
+                    android:id="@+id/city_txt"
+                    android:layout_below="@+id/relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="City/town/village "
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:padding="10dp"
+                android:id="@+id/pincode"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/pincode_txt"
+                    android:layout_below="@+id/relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pin code"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:padding="10dp"
+                android:id="@+id/block"
+                android:layout_marginBottom="8dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/block_txt"
+                    android:layout_below="@+id/relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Block"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:padding="10dp"
+                android:id="@+id/district"
+                android:layout_marginBottom="8dp">
+                <AutoCompleteTextView
+                    android:id="@+id/district_txt"
+                    android:layout_below="@+id/relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="District"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:padding="10dp"
+                android:id="@+id/state"
+                android:layout_marginBottom="8dp">
+                <AutoCompleteTextView
+                    android:id="@+id/state_txt"
+                    android:layout_below="@+id/relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="State"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/text"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="Back"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:id="@+id/back_btn"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/btn1"
+                    android:layout_below="@+id/relative2"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    />
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="Next"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:id="@+id/next_btn"
+                    android:layout_marginLeft="120dp"
+                    android:background="@drawable/btn"
+                    android:layout_below="@+id/relative2"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

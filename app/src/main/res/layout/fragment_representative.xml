@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/linearOne">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/one1"
+                android:text="1"
+                android:textColor="#ffffff"
+                android:background="#458b00"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:background="#458b00"
+            android:layout_marginTop="19dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/two2"
+                android:text="2"
+                android:textColor="#ffffff"
+                android:background="#458b00"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:background="#458b00"
+            android:layout_marginTop="19dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/three3"
+                android:background="#458b00"
+                android:textColor="#ffffff"
+                android:text="3"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textmain"
+
+        android:layout_below="@+id/linearOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1f3324"
+        android:textColor="#FFDF00"
+        android:padding="10dp"
+        android:text="Select Your Representative"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/textmain"
+        android:layout_height="wrap_content" >
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_below="@+id/linearOne"
+        android:id="@+id/representive_type"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:id="@+id/selectreprestve_edtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Choose Your Representative"
+            android:textSize="20sp"
+            android:completionThreshold = "1"
+            android:layout_below="@+id/linearOne"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+        <EditText
+            android:id="@+id/textotp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Enter Otp Given By Representative"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/sendrepstive_btn"
+            />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_marginTop="40dp"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/frameLayout1"
+        android:layout_height="wrap_content" >
+
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="Submit Otp"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:id="@+id/sotp_btn"
+            android:background="@drawable/btn1"
+            android:layout_below="@+id/relative2"
+            android:gravity="center"
+            />
+
+
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="Send Representative Id"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:id="@+id/sendrepstive_btn"
+            android:background="@drawable/btn"
+            android:layout_below="@+id/relative2"
+            android:gravity="center"
+            />
+
+
+
+    </FrameLayout>
+
+
+    </RelativeLayout>
